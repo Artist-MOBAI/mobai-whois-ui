@@ -14,7 +14,7 @@ const Item: React.FC<ItemProps> = ({ value, keyName }) => {
         <div className="ml-16 h-auto overflow-clip border-r-4 border-t-4 border-whois_ui-line px-4 pb-16 pt-4 text-right">
           <p>{value}</p>
           <div className="relative">
-            <div className="absolute bottom-4 flex origin-left rotate-12 transform flex-col">
+            <div className="absolute bottom-4 flex origin-left skew-y-12 transform flex-col">
               <Scroll key={keyName} keyName={keyName} />
             </div>
           </div>
