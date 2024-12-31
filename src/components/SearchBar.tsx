@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
-import Item from "./Item";
+import Item from "./ui/item";
 
 interface SearchBarProps {
   onHoverChange: (isHovere: boolean) => void;
@@ -17,6 +17,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ onHoverChange }) => {
       /\s(?=ns.\.)/g,
       /\s(?=ns.\-)/g,
       /\s(?=dns.\.)/g,
+      /\s(?=\/\/)/g,
+      /\s(?=https\:\/\/)/g,
       /(?<=\))\s/g,
     ];
     const emptyRegexes = [/<<</g];
@@ -42,7 +44,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onHoverChange }) => {
     const response = await fetch(`/api/?domain=${domain}`);
     const result = await response.json();
     setData(result);
-  }, 500);
+  }, 560);
 
   return (
     <form

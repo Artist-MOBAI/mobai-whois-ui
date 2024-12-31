@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50% - 4px))" },
+        },
+      },
+      animation: {
+        "infinate-scroll": "infinite-scroll 50s linear infinite",
+      },
       colors: {
         whois_ui: {
           background: "#EBECEE",
