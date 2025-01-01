@@ -24,7 +24,7 @@ const Item: React.FC<ItemProps> = ({ value, keyName }) => {
             {keyName
               .match(/[A-Z]?[a-z]+/g)
               ?.map((word) => word[0].toUpperCase())
-              .join("")}
+              .join("\n")}
           </p>
         </div>
       </div>
