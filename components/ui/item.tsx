@@ -12,7 +12,7 @@ const Item: React.FC<ItemProps> = ({ value, keyName }) => {
       <div className="absolute -top-16 right-0 h-16 w-1 bg-whois_ui-line"></div>
       <div className="ml-16 grid w-full grid-cols-[1fr_4rem] font-mono text-3xl font-semibold">
         <div className="ml-16 h-auto overflow-clip border-r-4 border-t-4 border-whois_ui-line px-4 pb-16 pt-4 text-right">
-          <p>{value}</p>
+          <p className="whitespace-pre-wrap">{value}</p>
           <div className="relative">
             <div className="absolute bottom-4 flex origin-left skew-y-12 transform flex-col">
               <Scroll key={keyName} keyName={keyName} />
