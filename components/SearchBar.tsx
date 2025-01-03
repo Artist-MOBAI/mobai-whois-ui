@@ -48,13 +48,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ onHoverChange }) => {
 
   return (
     <form
-      className="ml-32 mr-16 mt-16 h-16 w-auto"
+      className="ml-32 mr-16 h-16 w-auto"
       onSubmit={(e) => e.preventDefault()}
     >
       <div>
         <input
           type="text"
-          className="h-16 w-full cursor-none border-4 border-whois_ui-text bg-whois_ui-background p-4 font-mono text-3xl font-semibold text-whois_ui-text hover:bg-whois_ui-line hover:text-whois_ui-background hover:caret-whois_ui-background focus:outline-none"
+          className="h-16 w-full cursor-none border-4 border-[var(--foreground)] bg-[var(--background)] p-4 text-3xl font-semibold text-whois_ui-text hover:bg-[var(--foreground)] hover:text-[var(--background)] hover:caret-[var(--background)] focus:outline-none"
           value={domain}
           onChange={handleInputChange}
           onMouseEnter={() => onHoverChange(true)}

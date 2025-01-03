@@ -18,12 +18,12 @@ export default {
         "infinate-scroll": "infinite-scroll 50s linear infinite",
       },
       colors: {
-        whois_ui: {
-          background: "#EBECEE",
-          text: "#000405",
-          line: "#000405",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        mobai: {
+          white: "#EBECEE",
+          black: "#000405",
         },
-        dark: {},
       },
     },
   },
