@@ -12,9 +12,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`flex min-h-screen antialiased`}>
-        <div className="absolute left-0 top-0 font-mono">
-          <div className="ml-20 mt-20">{children}</div>
+      <body className={`absolute left-0 top-0 flex min-h-screen antialiased`}>
+        <div className="font-mono">
+          <div className="ml-16 mt-20">{children}</div>
         </div>
       </body>
     </html>
