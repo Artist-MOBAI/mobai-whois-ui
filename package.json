@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tauri-apps/api": "^2.2.0",
     "@types/whois-json": "^2.0.4",
     "next": "15.1.2",
     "prettier": "^3.4.2",

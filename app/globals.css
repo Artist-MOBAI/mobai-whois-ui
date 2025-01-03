@@ -18,3 +18,11 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}

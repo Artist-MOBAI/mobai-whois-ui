@@ -12,9 +12,9 @@
   "app": {
     "windows": [
       {
-        "title": "mobai-whois-ui",
-        "width": 800,
-        "height": 600,
+        "decorations": false,
+        "minWidth": 1000,
+        "minHeight": 770,
         "resizable": true,
         "fullscreen": false
       }
